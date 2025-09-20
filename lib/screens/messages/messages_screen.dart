@@ -54,7 +54,12 @@ class MessagesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 88,
-        leading: IconButton(onPressed: () {}, icon: Icon(CupertinoIcons.back)),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(CupertinoIcons.back),
+        ),
         title: Text(
           "Sujal_dave",
           style: TextStyle(
