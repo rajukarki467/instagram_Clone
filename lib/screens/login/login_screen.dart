@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/screens/signup/signup_screen.dart';
 import 'package:instagram_ui/widgets/uihelper.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -51,7 +52,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 15),
               Text(
                 "OR",
                 style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
@@ -63,9 +64,17 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Don't have an  account?",
-                    style: TextStyle(fontSize: 14, color: Colors.white),
+                    style: TextStyle(fontSize: 15, color: Colors.white),
                   ),
-                  UiHelper.CustomTextButton(text: "Sign Up", callback: () {}),
+                  UiHelper.CustomTextButton(
+                    text: "Sign Up",
+                    callback: () {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => SignupScreen()),
+                      );
+                    },
+                  ),
                 ],
               ),
             ],
