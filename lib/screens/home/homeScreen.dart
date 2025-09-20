@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/screens/messages/messages_screen.dart';
 import 'package:instagram_ui/widgets/uihelper.dart';
 
 class Homescreen extends StatelessWidget {
@@ -61,7 +62,12 @@ class Homescreen extends StatelessWidget {
             icon: UiHelper.CustomImage(imgurl: "IGTV.png"),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MessagesScreen()),
+              );
+            },
             icon: UiHelper.CustomImage(imgurl: "Messanger.png"),
           ),
         ],
