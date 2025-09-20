@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_ui/screens/bottomnavbar/bottomnavbarScreen.dart';
 import 'package:instagram_ui/screens/login/login_screen.dart';
 import 'package:instagram_ui/screens/signup/signup_screen.dart';
 import 'package:instagram_ui/screens/splash/splash_screen.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Instagram',
       theme: ThemeData.dark(),
       // home: SplashScreen(),
-      home: SignupScreen(),
+      home: Bottomnavbarscreen(),
     );
   }
 }
