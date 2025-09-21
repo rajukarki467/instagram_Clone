@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/screens/bottomnavbar/bottomnavbarScreen.dart';
+import 'package:instagram_ui/screens/heart/heartscreen.dart';
 import 'package:instagram_ui/screens/home/homeScreen.dart';
 import 'package:instagram_ui/screens/login/login_screen.dart';
 import 'package:instagram_ui/screens/messages/messages_screen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'Instagram',
       theme: ThemeData.dark(),
       // home: SplashScreen(),
-      home: Profilescreen(),
+      home: Heartscreen(),
     );
   }
 }
